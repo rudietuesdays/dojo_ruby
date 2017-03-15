@@ -1,3 +1,11 @@
+=begin
+ruby notes
+
+- innumerable : changeable, can loop through
+- block : a function block (i.e., in javascript function, it’s the part between the {}
+
+=end
+
 # 1. Start a new project (the name of the project should be 'dojo_ninjas')
 rails new dojo_ninjas
 
@@ -89,7 +97,7 @@ end
 
 # Using the console:
 # 1. create 5 new blogs.
-1.upto(5) { |i| Blog.create(name: "Blog #{i}", description: "This is the description for Blog #{i}") }
+1.upto(3) { |i| Blog.create(name: "Blog #{i}", description: "This is the description for Blog #{i}") }
 
 # 2. create several posts for each blog
 Blog.all.each do |blog|
@@ -100,3 +108,33 @@ end
 post = Post.first
 names = ["John Doe", "Jane Doe", "Jennifer Doe", "Michael Smith", "Michelle Smith", "Mitchell Smite"]
 names.each { |elem| post.messages.create(author: elem, message: "This message belongs to the first post") }
+
+###################################
+
+##### VIEWS COMMANDS (in html) #####
+
+<% @products.each do |product| %>
+  <p><%= product.name %></p>
+  <p><%= product.description %></p>
+<% end %>
+
+>>>>>>>>>>>>>>>>>>>>
+##### flash messages #####
+# in views:
+<% if @product.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@product.errors.count, "error")%>prohibited this post from being saved:</h2>
+    <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+>>>>>>>>>>>>>>>>>>>>
+##### Flash Messages #####
+# in controllers:
+redirect_to root_url, flash: { referral_code: 1234 }
+redirect_to root_url, notice: "You have successfully logged out."
+redirect_to root_url, alert: "You're stuck here!"

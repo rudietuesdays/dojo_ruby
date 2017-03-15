@@ -1,0 +1,19 @@
+<h1>New User</h1>
+<form action="/users" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>Name: <input type="text" name="user[name]"></p>
+  <p>Dojo location: <select name="user[location]">
+    <option value="Mountain View">Mountain View</option>
+    <option value="Washington, DC">Washington, DC</option>
+    <option value="Seattle">Seattle</option>
+  </select></p>
+  <p>Favorite language: <select name="user[language]">
+    <option value="JavaScript">JavaScript</option>
+    <option value="Ruby">Ruby</option>
+    <option value="Python">Python</option>
+    <option value="MEAN">MEAN</option>
+  </select></p>
+  <p>Comment (optional):</p>
+  <p><textarea name="user[comment]" rows="8" cols="80"></textarea></p>
+  <p><input type="submit" value="create user"></p>
+</form>

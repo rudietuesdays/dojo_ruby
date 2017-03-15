@@ -1,0 +1,27 @@
+
+
+
+class CreateComments < ActiveRecord::Migration
+  def change
+    create_table :comments do |t|
+      t.text :content
+      t.references :commentable, polymorphic: true, index: true
+      t.timestamps null: false
+    end
+  end
+end
+
+class Comment < ActiveRecord::Base
+    validates :content, presence: true
+    belongs_to :commentable, polymorphic: true
+end
+
+for models User, Blog, Post, Message, add a line:
+    has_many :comments, as: :commentable
+
+Comment.create(content: "First comment", commentable: User.first)
+Comment.create(content: "First comment on a blog!", commentable: Blog.second)
+Comment.create(content: "This is a comment on a message", commentable: Message.third)
+Comment.create(content: "And here is a comment on a post.", commentable: Post.first)
+Comment.all
+User.first.comments

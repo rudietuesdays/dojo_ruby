@@ -1,0 +1,37 @@
+**USEFUL GEMS**
+gem 'hirb'
+gem 'rails-footnotes'
+
+**USE RAILS FOOTNOTES**
+rails generate rails_footnotes:install
+
+**BUILD RESTFUL ROUTES WITH RAILS**
+IN app/config/routes.rb ADD resources:controller_name
+IN Terminal type rake routes
+
+OR
+WRITE YOUR OWN ROUTE WITH:
+    HTTP_VERB "relative URL" => "controller#method"
+
+**GENERATE CONTROLLERS W/ RAILS**
+rails g controller <ControllerName> <methods space separated>
+
+
+**RAILS AUTHENTICITY TOKEN**
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+**PATCH INPUT**
+<form action="/blogs/<%= blog.id %>" method="post">
+<input type="hidden" name="_method" value="patch">
+</form>
+
+**DELETE INPUT**
+<a href="/blogs/<%= blog.id %>" data-method="delete">Delete this blog!</a>
+
+**SIMPLIFY CONSOLE LOGS**
+    GO TO config/environments/development.rb
+    ADD LINE config.log_level = :warn
+
+**SCAFFOLDING**
+    Example
+    rails g scaffold User first_name:string last_name:string email:string age:integer

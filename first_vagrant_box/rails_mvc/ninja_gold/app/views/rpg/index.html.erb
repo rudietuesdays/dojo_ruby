@@ -1,0 +1,53 @@
+<div id="wrapper">
+    <h2>Let's play N I N J A &nbsp;&nbsp;G O L D</h2>
+    <p>Your gold:
+        <output name="your_gold"><%= @gold %></output>
+    </p>
+    <form class="box" action="/process_gold" method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <input type="hidden" name="building" value="farm">
+        <h4>Farm</h4>
+        <p>(earns 10-20 golds)</p>
+        <p><input type="submit" value="Find Gold!"></p>
+    </form>
+    <form class="box" action="/process_gold" method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <input type="hidden" name="building" value="cave">
+        <h4>Cave</h4>
+        <p>(earns 5-10 gold)</p>
+        <p><input type="submit" value="Find Gold!"></p>
+    </form>
+    <form class="box" action="/process_gold" method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <input type="hidden" name="building" value="house">
+        <h4>House</h4>
+        <p>(earns 2-5 gold)</p>
+        <p><input type="submit" value="Find Gold!"></p>
+    </form>
+    <form class="box" action="/process_gold" method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <input type="hidden" name="building" value="casino">
+        <h4>Casino</h4>
+        <p>(earns/takes 0-50 gold)</p>
+        <p><input type="submit" value="Find Gold!"></p>
+    </form>
+    <p>
+        <label>Activities:</label>
+    </p>
+    <div id="activities">
+      <% @log.reverse.each do |element| %>​
+        <% if element.include?("Earned")%>
+          <p class='green'>
+            <%= element %>
+          </p>
+        <% else %>
+          <p class='red'>
+            <%= element %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+    <form action="/replay" method="post">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <input type="submit" value="Start Over">
+    </form>

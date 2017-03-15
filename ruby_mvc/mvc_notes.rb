@@ -4,6 +4,8 @@ all things that deal with handling the URL request need to be inside a folder/cl
 all things that deal with business logic need to be inside a folder/class called Controllers.
 we'll have a config folder where we can store things related to configuring the app (database, session, security encryption, etc.).'
 
+method testing!
+try to write in complete sentences as close as possible
 ##################
 helpful rails console queries:
 

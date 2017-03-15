@@ -1,0 +1,7 @@
+<h1>Edit Users</h1>
+<form action="/users/<%= @user.id %>" method="post">
+    <p><input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"></p>
+    <input type="hidden" name="_method" value="patch">
+    <p>Name: <input type="text" name="name" value="<%= @user.name %>"></p>
+    <input type="submit" value="edit user">
+</form>

@@ -1,0 +1,24 @@
+<h1>Listing Products</h1>
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Description</td>
+        </tr>
+    </thead>
+    <tbody>
+        <% @products.each do |product| %>
+        <tr>
+            <td><%= product.name %></td>
+            <td><%= product.description %></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+<h1>Enter a New Product</h1>
+<form action="/products/new" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <p>Name: <input type="text" name="name"></p>
+    <p>Description: <textarea name='description'></textarea>
+    <input type='submit' value='Create'>
+</from>
