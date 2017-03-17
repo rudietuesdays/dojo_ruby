@@ -1,0 +1,57 @@
+IN Terminal
+Navigate to directory where you want to build FOLDER
+
+To install without test unit and use Factory Girl and Capybara instead
+  rails new <proj_name> -T
+
+Navigate to GEMFILE
+Add to dev env
+  gem 'hirb'
+  gem 'rails-footnotes'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+
+IN Terminal
+  bundle install
+  rails generate rspec:install
+
+IN spec/rails_helper.rb
+  require 'factory_girl_rails'
+  RSpec.configure do |config|
+    config.include FactoryGirl::Syntax::Methods
+    ...
+  end
+
+IN Terminal
+  rails g model User first_name:string last_name:string email:string
+  rake db:migrate
+
+IN spec/factories/users.rb
+  FactoryGirl.define do
+    factory :user do
+      first_name "Jane"
+      last_name "Doe"
+      email "jane@doe.com"
+    end
+  end
+
+IN spec/models/user_spec.rb
+  # write your tests!
+
+IN Terminal
+  rails g controller Users new
+
+IN config/routes.rb
+  resources :users # to create RESTful routes
+
+IN Terminal
+  mkdir spec/features
+  touch spec/features/register_user_spec.rb
+
+IN Terminal
+run all RSpec tests
+  rspec spec
+run tests in a specific file
+  rspec spec/<FOLDER>/<FILENAME>
+  i.e. rspec spec/models/user_spec.rb

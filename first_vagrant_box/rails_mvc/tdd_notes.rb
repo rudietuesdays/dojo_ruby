@@ -26,7 +26,7 @@ RSpec.describe "Buy a soda" do
   end
 end
 
-### RSpec Expectations
+### RSpec Expectations ###
 
 =begin
 Modifiers:
@@ -60,4 +60,15 @@ ninja.happy?.should == true
 ninja.happy?.should_not == false
 ninja.happy?.should_not be_false
 ninja.happy?.should eq true
-ninja.should be_happyCopy
+ninja.should be_happy
+
+### RAILS TDD ###
+
+* Run all the spec tests: rspec spec
+
+* Run all the spec tests in a specific file: rspec spec/<FOLDER>/<FILENAME>
+i.e. rspec spec/models/user_spec.rb
+
+* Run a specific spec test: rspec spec/<FOLDER>/<FILENAME>:<LINE_NUMBER>
+  i.e. rspec spec/models/user_spec.rb:4
+  This will run the spec test on line 4.

@@ -10,7 +10,11 @@ IN Terminal bundle install
 
 **USE RAILS FOOTNOTES AND RSPEC**
 rails generate rails_footnotes:install
-rails g rspec-install
+rails g rspec:install
+
+**CREATE RAILS PROJECT WITHOUT BUILT-IN TEST::UNIT**
+* useful when using rspec, factory girl
+IN Terminal rails new <your_app_name> -T
 
 **BUILD RESTFUL ROUTES WITH RAILS**
 IN app/config/routes.rb ADD resources:controller_name
@@ -43,5 +47,5 @@ rails g controller <ControllerName> <methods space separated>
     rails g scaffold User first_name:string last_name:string email:string age:integer
 
 ** AUTOMATICALLY LOAD A GEM **
-gem install gemrat 
+gem install gemrat
 gemrat hirb
