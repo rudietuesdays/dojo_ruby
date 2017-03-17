@@ -1,0 +1,32 @@
+<h1><%= @dojo.branch %></p>
+<p><strong>Address:</strong>
+<p><%= @dojo.street %></p>
+<p><%= @dojo.city %>, <%= @dojo.state %> </p>
+
+<h3>Student Roster</h3>
+<table>
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.first_name %></td>
+        <td><%= student.last_name %></td>
+        <td><%= student.email %></td>
+        <td><a href="/dojos/<%= @student.dojo_id %>/students/<%= @student.id %>">Show</a></td>
+        <td><%= link_to 'Edit', '/dojos/:dojo_id/students/:id/edit' %></td>
+        <td><%= link_to 'Destroy', '/dojos/:dojo_id/students/:id', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<!-- <%= link_to 'Edit', edit_dojo_path(@dojo) %> | -->
+<%= link_to 'Back', dojos_path %> | <a href="/dojos/<%= @dojo.id %>/students/new">Add New Student</a>

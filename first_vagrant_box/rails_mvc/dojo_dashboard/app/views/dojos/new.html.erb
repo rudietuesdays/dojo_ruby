@@ -1,0 +1,25 @@
+<h1>New Dojo</h1>
+
+<% if @dojo.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@dojo.errors.count, "error") %> prohibited this dojo from being saved:</h2>
+
+    <ul>
+    <% @dojo.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<form action="/dojos" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>Branch: <input type="text" name="branch"</p>
+  <p>Street: <input type="text" name="street"</p>
+  <p>City: <input type="text" name="city"</p>
+  <p>State: <input type="text" name="state"</p>
+  <p><input type="submit" value="Create Dojo"></p>
+
+</form>
+
+<%= link_to 'Back', dojos_path %>

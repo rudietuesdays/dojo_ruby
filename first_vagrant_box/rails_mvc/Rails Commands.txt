@@ -1,9 +1,16 @@
 **USEFUL GEMS**
 gem 'hirb'
 gem 'rails-footnotes'
+gem 'rspec-rails'
+gem 'factory_girl_rails'
+gem 'capybara'
+gem 'web-console'
 
-**USE RAILS FOOTNOTES**
+IN Terminal bundle install
+
+**USE RAILS FOOTNOTES AND RSPEC**
 rails generate rails_footnotes:install
+rails g rspec-install
 
 **BUILD RESTFUL ROUTES WITH RAILS**
 IN app/config/routes.rb ADD resources:controller_name
@@ -15,7 +22,6 @@ WRITE YOUR OWN ROUTE WITH:
 
 **GENERATE CONTROLLERS W/ RAILS**
 rails g controller <ControllerName> <methods space separated>
-
 
 **RAILS AUTHENTICITY TOKEN**
 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
@@ -35,3 +41,7 @@ rails g controller <ControllerName> <methods space separated>
 **SCAFFOLDING**
     Example
     rails g scaffold User first_name:string last_name:string email:string age:integer
+
+** AUTOMATICALLY LOAD A GEM **
+gem install gemrat 
+gemrat hirb
