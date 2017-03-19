@@ -1,2 +1,18 @@
 <h1>Coding Dojo Wall</h1>
 <h2>Welcome, <%= @user.username %></h2>
+<a href="/users/logout">Log Out</a>
+<h3>Post a Message</h3>
+<% if flash[:errors] %>
+  <% flash[:errors].each do |note| %>
+    <p id="notice"><%= note %></p>
+  <% end %>
+<% end %>
+<form action="/messages/create" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="text" name="message[content]">
+  <input type="submit" value="Post a Message">
+</form>
+<% @messages.each do |message| %>
+  <p><%= message.user.username %> - <%= message.created_at.strftime("%B #{message.created_at.day.ordinalize}, %Y") %></p>
+  <p><%= message.content %></p>
+<% end %>

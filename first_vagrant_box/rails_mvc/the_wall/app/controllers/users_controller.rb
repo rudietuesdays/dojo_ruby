@@ -19,6 +19,11 @@ class UsersController < ApplicationController
     end
   end
 
+  def logout
+    reset_session
+    redirect_to '/users/new'
+  end
+
   private
   def user_params
     params.require(:user).permit(:username)

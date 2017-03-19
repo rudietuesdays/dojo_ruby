@@ -36,6 +36,19 @@ IN spec/factories/users.rb
     end
   end
 
+IN spec/support/user_helper.rb
+EXAMPLE:
+  require "rails_helper"
+  module CapybaraHelpers
+    def register_user(first_name: 'shane', last_name: "chang", email: "schang@codingdojo.com")
+      visit new_user_path unless current_path == new_user_path
+      fill_in "user_first_name", with: first_name
+      fill_in "user_last_name", with: last_name
+      fill_in "user_email", with: email
+      click_button "Create User"
+    end
+  end
+
 IN spec/models/user_spec.rb
   # write your tests!
 
@@ -48,6 +61,18 @@ IN config/routes.rb
 IN Terminal
   mkdir spec/features
   touch spec/features/register_user_spec.rb
+  mkdir spec/support # to create helpers like with factory girl
+  touch spec/support/user_helper.rb
+
+IN spec/rails_helper.rb
+  ...
+  Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f } # uncomment this line
+  ...
+  RSpec.configure do |config|
+    config.include CapybaraHelpers # add this line
+    ...
+  end
+  ...
 
 In spec/features/register_user_spec.rb
 EXAMPLE:
