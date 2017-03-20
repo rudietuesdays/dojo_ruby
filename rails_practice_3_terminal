@@ -1,0 +1,1998 @@
+Last login: Sat Mar 18 16:24:45 on ttys000
+NAFMacBook-3:~ amandagaines$ cd ~/Desktop/WEB_FUN_JAN2017/rae/DojoAssignments/Dojo_Ruby/
+NAFMacBook-3:Dojo_Ruby amandagaines$ ls
+README.md			rails_practice_2_terminal
+about.txt			ruby_fundamentals
+first_vagrant_box		ruby_mvc
+rails_mvc			ruby_oop
+rails_practice_1_terminal	ruby_set_up
+NAFMacBook-3:Dojo_Ruby amandagaines$ cd first_vagrant_box/
+NAFMacBook-3:first_vagrant_box amandagaines$ vagrant up --provision
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/trusty64' is up to date...
+==> default: A newer version of the box 'ubuntu/trusty64' is available! You currently
+==> default: have version '20170222.0.1'. The latest is version '20170313.0.3'. Run
+==> default: `vagrant box update` to update.
+==> default: Running provisioner: shell...
+    default: Running: /var/folders/7y/1vq6b2616f329ybw7zln0rtr0000gr/T/vagrant-shell20170319-1156-1bav1gg.sh
+==> default: upgrading and updating the system
+==> default: Ign http://archive.ubuntu.com trusty InRelease
+==> default: Hit http://security.ubuntu.com trusty-security InRelease
+==> default: Get:1 http://archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+==> default: Hit http://security.ubuntu.com trusty-security/main Sources
+==> default: Hit http://security.ubuntu.com trusty-security/universe Sources
+==> default: Hit http://security.ubuntu.com trusty-security/main amd64 Packages
+==> default: Hit http://archive.ubuntu.com trusty-backports InRelease
+==> default: Hit http://archive.ubuntu.com trusty Release.gpg
+==> default: Hit http://security.ubuntu.com trusty-security/universe amd64 Packages
+==> default: Hit http://security.ubuntu.com trusty-security/main Translation-en
+==> default: Get:2 http://archive.ubuntu.com trusty-updates/main Sources [393 kB]
+==> default: Hit http://security.ubuntu.com trusty-security/universe Translation-en
+==> default: Get:3 http://archive.ubuntu.com trusty-updates/restricted Sources [5,911 B]
+==> default: Get:4 http://archive.ubuntu.com trusty-updates/universe Sources [175 kB]
+==> default: Get:5 http://archive.ubuntu.com trusty-updates/multiverse Sources [7,513 B]
+==> default: Get:6 http://archive.ubuntu.com trusty-updates/main amd64 Packages [962 kB]
+==> default: Get:7 http://archive.ubuntu.com trusty-updates/restricted amd64 Packages [16.4 kB]
+==> default: Get:8 http://archive.ubuntu.com trusty-updates/universe amd64 Packages [401 kB]
+==> default: Get:9 http://archive.ubuntu.com trusty-updates/multiverse amd64 Packages [14.0 kB]
+==> default: Hit http://archive.ubuntu.com trusty-updates/main Translation-en
+==> default: Hit http://archive.ubuntu.com trusty-updates/multiverse Translation-en
+==> default: Hit http://archive.ubuntu.com trusty-updates/restricted Translation-en
+==> default: Hit http://archive.ubuntu.com trusty-updates/universe Translation-en
+==> default: Hit http://archive.ubuntu.com trusty-backports/main Sources
+==> default: Hit http://archive.ubuntu.com trusty-backports/restricted Sources
+==> default: Hit http://archive.ubuntu.com trusty-backports/universe Sources
+==> default: Hit http://archive.ubuntu.com trusty-backports/multiverse Sources
+==> default: Hit http://archive.ubuntu.com trusty-backports/main amd64 Packages
+==> default: Hit http://archive.ubuntu.com trusty-backports/restricted amd64 Packages
+==> default: Hit http://archive.ubuntu.com trusty-backports/universe amd64 Packages
+==> default: Hit http://archive.ubuntu.com trusty-backports/multiverse amd64 Packages
+==> default: Hit http://archive.ubuntu.com trusty-backports/main Translation-en
+==> default: Hit http://archive.ubuntu.com trusty-backports/multiverse Translation-en
+==> default: Hit http://archive.ubuntu.com trusty-backports/restricted Translation-en
+==> default: Hit http://archive.ubuntu.com trusty-backports/universe Translation-en
+==> default: Hit http://archive.ubuntu.com trusty Release
+==> default: Hit http://archive.ubuntu.com trusty/main Sources
+==> default: Hit http://archive.ubuntu.com trusty/restricted Sources
+==> default: Hit http://archive.ubuntu.com trusty/universe Sources
+==> default: Hit http://archive.ubuntu.com trusty/multiverse Sources
+==> default: Hit http://archive.ubuntu.com trusty/main amd64 Packages
+==> default: Hit http://archive.ubuntu.com trusty/restricted amd64 Packages
+==> default: Hit http://archive.ubuntu.com trusty/universe amd64 Packages
+==> default: Hit http://archive.ubuntu.com trusty/multiverse amd64 Packages
+==> default: Hit http://archive.ubuntu.com trusty/main Translation-en
+==> default: Hit http://archive.ubuntu.com trusty/multiverse Translation-en
+==> default: Hit http://archive.ubuntu.com trusty/restricted Translation-en
+==> default: Hit http://archive.ubuntu.com trusty/universe Translation-en
+==> default: Ign http://archive.ubuntu.com trusty/main Translation-en_US
+==> default: Ign http://archive.ubuntu.com trusty/multiverse Translation-en_US
+==> default: Ign http://archive.ubuntu.com trusty/restricted Translation-en_US
+==> default: Ign http://archive.ubuntu.com trusty/universe Translation-en_US
+==> default: Fetched 2,042 kB in 8s (255 kB/s)
+==> default: Reading package lists...
+==> default: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: The following packages have been kept back:
+==> default:   linux-headers-generic linux-headers-virtual linux-image-virtual
+==> default:   linux-virtual
+==> default: 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+==> default: installing nodejs for ExecJS runtime and git
+==> default: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: nodejs is already the newest version.
+==> default: 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+==> default: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: git is already the newest version.
+==> default: 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+==> default: installing RVM
+==> default: gpg: 
+==> default: requesting key D39DC0E3 from hkp server keys.gnupg.net
+==> default: gpg: 
+==> default: key D39DC0E3: "Michal Papis (RVM signing) <mpapis@gmail.com>" not changed
+==> default: gpg: 
+==> default: Total number processed: 1
+==> default: gpg: 
+==> default:              unchanged: 1
+==> default: Downloading https://github.com/rvm/rvm/archive/1.29.1.tar.gz
+==> default: Downloading https://github.com/rvm/rvm/releases/download/1.29.1/1.29.1.tar.gz.asc
+==> default: Found PGP signature at: 'https://github.com/rvm/rvm/releases/download/1.29.1/1.29.1.tar.gz.asc',
+==> default: but no GPG software exists to validate it, skipping.
+==> default: Upgrading the RVM installation in /home/vagrant/.rvm/
+==> default:     RVM PATH line found in /home/vagrant/.mkshrc /home/vagrant/.profile /home/vagrant/.bashrc /home/vagrant/.zshrc.
+==> default:     RVM sourcing line found in /home/vagrant/.profile /home/vagrant/.bash_profile /home/vagrant/.zlogin.
+==> default: Upgrade of RVM in /home/vagrant/.rvm/ is complete.
+==> default: # User,
+==> default: #
+==> default: #   Thank you for using RVM!
+==> default: #   We sincerely hope that RVM helps to make your life easier and more enjoyable!!!
+==> default: #
+==> default: # ~Wayne, Michal & team.
+==> default: In case of problems: https://rvm.io/help and https://twitter.com/rvm_io
+==> default: Upgrade Notes:
+==> default:   * No new notes to display.
+==> default: Checking requirements for ubuntu.
+==> default: Requirements installation successful.
+==> default: installing ruby
+==> default: Already installed ruby-2.3.1.
+==> default: To reinstall use:
+==> default:     rvm reinstall ruby-2.3.1
+==> default: Using /home/vagrant/.rvm/gems/ruby-2.3.1
+==> default: installing bundler and rails
+==> default: Successfully installed bundler-1.14.6
+==> default: 1 gem installed
+==> default: Successfully installed rails-4.2.7
+==> default: 1 gem installed
+==> default: installing psql and its dependencies
+==> default: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: libpq-dev is already the newest version.
+==> default: postgresql is already the newest version.
+==> default: postgresql-contrib is already the newest version.
+==> default: 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+NAFMacBook-3:first_vagrant_box amandagaines$ vagrant ssh
+Welcome to Ubuntu 14.04.5 LTS (GNU/Linux 3.13.0-110-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Sun Mar 19 17:00:41 UTC 2017
+
+  System load:  0.0               Processes:           91
+  Usage of /:   4.8% of 39.34GB   Users logged in:     0
+  Memory usage: 7%                IP address for eth0: 10.0.2.15
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+7 packages can be updated.
+7 updates are security updates.
+
+New release '16.04.2 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Sat Mar 18 20:27:24 2017 from 10.0.2.2
+vagrant@vagrant-ubuntu-trusty-64:~$ cd /vagrant/
+vagrant@vagrant-ubuntu-trusty-64:/vagrant$ ls
+basic_13.rb  bootstrap.sh  is_this_file_synced  rails_mvc  Vagrantfile
+vagrant@vagrant-ubuntu-trusty-64:/vagrant$ cd rails_mvc/
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ ls
+bank                hello.zip           rails_TDD        tdd_notes.rb
+bank.zip            magic               rails_TDD.zip    tdd.zip
+blogs_proj          magic.zip           RGR_demo         the_wall
+blogs_proj.zip      new_project.txt     RGR_demo.zip     time_display
+demo                ninja_gold          scaffold_demo    time_display.zip
+dojo_dashboard      ninja_gold.zip      stringer         tree_of_life
+dojo_dashboard.zip  optimize            stringer.zip     tree_of_life.zip
+dojo_ninjas         products_demo       survey_form      user_login_proj
+dojo_ninjas.zip     rae_stringer        survey_form.zip  users_demo
+hello               Rails Commands.txt  tdd              users_demo.zip
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ cd the_wall/
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ ls
+app  config     db       Gemfile.lock  log     Rakefile     spec  vendor
+bin  config.ru  Gemfile  lib           public  README.rdoc  tmp
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: fill_in "message", with: "This is a valid message wow"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "message"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: fill_in "message", with: "invalid"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "message"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+Finished in 0.47273 seconds (files took 3.7 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: fill_in "message", with: "This is a valid message wow"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "message"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: fill_in "message", with: "invalid"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "message"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+Finished in 0.47891 seconds (files took 3.69 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: fill_in "message", with: "This is a valid message wow"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "message"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: fill_in "message", with: "invalid"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "message"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+Finished in 0.44861 seconds (files took 3.66 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: fill_in "message[content]", with: "This is a valid message wow"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "message[content]"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: fill_in "message", with: "invalid"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "message"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+Finished in 0.47371 seconds (files took 3.91 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: expect(page).to have_content "Coding Dojo Wall"
+       expected to find text "Coding Dojo Wall" in "Sign In Username has already been taken"
+     # ./spec/features/create_message_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: expect(page).to have_content "Coding Dojo Wall"
+       expected to find text "Coding Dojo Wall" in "Sign In Username has already been taken"
+     # ./spec/features/create_message_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+Finished in 0.49994 seconds (files took 3.63 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: click_button "Post a Message"
+     
+     ActionController::RoutingError:
+       No route matches [POST] "/messages/create"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:67:in `post'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: click_button "Post a Message"
+     
+     ActionController::RoutingError:
+       No route matches [POST] "/messages/create"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:67:in `post'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+Finished in 0.49132 seconds (files took 3.83 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: expect(page).to have_content "This is a valid message wow"
+       expected to find text "This is a valid message wow" in "Coding Dojo Wall Welcome, rudie_rae Log Out Post a Message"
+     # ./spec/features/create_message_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: expect(page).to have_content "is too short (minimum is 11 characters)"
+       expected to find text "is too short (minimum is 11 characters)" in "Coding Dojo Wall Welcome, rudie_rae Log Out Post a Message"
+     # ./spec/features/create_message_spec.rb:25:in `block (3 levels) in <top (required)>'
+
+Finished in 0.60435 seconds (files took 3.63 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+F.
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: expect(page).to have_content "This is a valid message wow"
+       expected to find text "This is a valid message wow" in "Coding Dojo Wall Welcome, rudie_rae Log Out Post a Message User can't be blank"
+     # ./spec/features/create_message_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+Finished in 0.62381 seconds (files took 3.65 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+F.
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: expect(page).to have_content "This is a valid message wow"
+       expected to find text "This is a valid message wow" in "Coding Dojo Wall Welcome, rudie_rae Log Out Post a Message User can't be blank"
+     # ./spec/features/create_message_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+Finished in 0.61159 seconds (files took 3.67 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+F.
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: expect(page).to have_content "This is a valid message wow"
+       expected to find text "This is a valid message wow" in "Coding Dojo Wall Welcome, rudie_rae Log Out Post a Message User can't be blank"
+     # ./spec/features/create_message_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+Finished in 0.61107 seconds (files took 3.68 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+F.
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: expect(page).to have_content "This is a valid message wow"
+       expected to find text "This is a valid message wow" in "Coding Dojo Wall Welcome, rudie_rae Log Out Post a Message User can't be blank"
+     # ./spec/features/create_message_spec.rb:15:in `block (3 levels) in <top (required)>'
+
+Finished in 0.61776 seconds (files took 3.69 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: @message = User.messages.new(message_params)
+     
+     NoMethodError:
+       undefined method `messages' for #<Class:0x00000005244d98>
+     # ./app/controllers/messages_controller.rb:9:in `create'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/conditionalget.rb:38:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:67:in `post'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: @message = User.messages.new(message_params)
+     
+     NoMethodError:
+       undefined method `messages' for #<Class:0x00000005244d98>
+     # ./app/controllers/messages_controller.rb:9:in `create'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/conditionalget.rb:38:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:67:in `post'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+Finished in 0.53179 seconds (files took 3.68 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: @message = User.messages.new(message_params)
+     
+     NoMethodError:
+       undefined method `messages' for #<Class:0x000000036d2c18>
+     # ./app/controllers/messages_controller.rb:9:in `create'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/conditionalget.rb:38:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:67:in `post'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: @message = User.messages.new(message_params)
+     
+     NoMethodError:
+       undefined method `messages' for #<Class:0x000000036d2c18>
+     # ./app/controllers/messages_controller.rb:9:in `create'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/conditionalget.rb:38:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:67:in `post'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+Finished in 0.54195 seconds (files took 3.81 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rake db:migrate:status
+
+database: /vagrant/rails_mvc/the_wall/db/development.sqlite3
+
+ Status   Migration ID    Migration Name
+--------------------------------------------------
+   up     20170317210629  Create users
+   up     20170317210731  Create messages
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rake db:migrate RAILS_ENV=test
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: @message = User.messages.new(message_params)
+     
+     NoMethodError:
+       undefined method `messages' for #<Class:0x00000004e2fe60>
+     # ./app/controllers/messages_controller.rb:9:in `create'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/conditionalget.rb:38:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:67:in `post'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:14:in `block (3 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: @message = User.messages.new(message_params)
+     
+     NoMethodError:
+       undefined method `messages' for #<Class:0x00000004e2fe60>
+     # ./app/controllers/messages_controller.rb:9:in `create'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/conditionalget.rb:38:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:67:in `post'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:36:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:24:in `block (3 levels) in <top (required)>'
+
+Finished in 0.55757 seconds (files took 3.67 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rails console
+Running via Spring preloader in process 8656
+Loading development environment (Rails 4.2.7)
+2.3.1 :001 > Hirb.enable
+ => true 
+2.3.1 :002 > Message.all
+  Message Load (12.2ms)  SELECT "messages".* FROM "messages"
+ => #<ActiveRecord::Relation []> 
+2.3.1 :003 > User.all
+  User Load (1.5ms)  SELECT "users".* FROM "users"
++----+-------------+-------------------------+-------------------------+
+| id | username    | created_at              | updated_at              |
++----+-------------+-------------------------+-------------------------+
+| 1  | rudie_rae   | 2017-03-18 17:49:09 UTC | 2017-03-18 17:49:09 UTC |
+| 2  | listhebeast | 2017-03-18 17:49:27 UTC | 2017-03-18 17:49:27 UTC |
+| 3  | howsegoat   | 2017-03-18 17:49:46 UTC | 2017-03-18 17:49:46 UTC |
++----+-------------+-------------------------+-------------------------+
+3 rows in set
+2.3.1 :004 > Message.create(content: "wow what a good message", user: User.find(1))
+  User Load (1.5ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+   (0.1ms)  begin transaction
+  SQL (3.3ms)  INSERT INTO "messages" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "wow what a good message"], ["user_id", 1], ["created_at", "2017-03-19 18:24:39.576730"], ["updated_at", "2017-03-19 18:24:39.576730"]]
+   (2.3ms)  commit transaction
++----+--------------------+---------+--------------------+---------------------+
+| id | content            | user_id | created_at         | updated_at          |
++----+--------------------+---------+--------------------+---------------------+
+| 1  | wow what a good... | 1       | 2017-03-19 18:2... | 2017-03-19 18:24... |
++----+--------------------+---------+--------------------+---------------------+
+1 row in set
+2.3.1 :005 > User.find(1).messages.all
+  User Load (1.4ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Message Load (1.2ms)  SELECT "messages".* FROM "messages" WHERE "messages"."user_id" = ?  [["user_id", 1]]
++----+--------------------+---------+--------------------+---------------------+
+| id | content            | user_id | created_at         | updated_at          |
++----+--------------------+---------+--------------------+---------------------+
+| 1  | wow what a good... | 1       | 2017-03-19 18:2... | 2017-03-19 18:24... |
++----+--------------------+---------+--------------------+---------------------+
+1 row in set
+2.3.1 :006 > User.find(1).messages.all
+  User Load (1.5ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Message Load (1.3ms)  SELECT "messages".* FROM "messages" WHERE "messages"."user_id" = ?  [["user_id", 1]]
++----+--------------------+---------+--------------------+---------------------+
+| id | content            | user_id | created_at         | updated_at          |
++----+--------------------+---------+--------------------+---------------------+
+| 1  | wow what a good... | 1       | 2017-03-19 18:2... | 2017-03-19 18:24... |
++----+--------------------+---------+--------------------+---------------------+
+1 row in set
+2.3.1 :007 > exit
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+FF
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: click_button "Sign In"
+     
+     SyntaxError:
+       /vagrant/rails_mvc/the_wall/app/views/messages/index.html.erb:16: syntax error, unexpected tSTRING_DEND, expecting ')'
+       ...eated_at.day.ordinalize}, %Y")} );@output_buffer.safe_append...
+       ...                               ^
+       /vagrant/rails_mvc/the_wall/app/views/messages/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+       '.freeze; end 
+                    ^
+       /vagrant/rails_mvc/the_wall/app/views/messages/index.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+       /vagrant/rails_mvc/the_wall/app/views/messages/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/conditionalget.rb:25:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:58:in `get'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:39:in `block in process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:38:in `times'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:38:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:7:in `block (2 levels) in <top (required)>'
+
+  2) create a new message unsuccessfully because message is too short
+     Failure/Error: click_button "Sign In"
+     
+     SyntaxError:
+       /vagrant/rails_mvc/the_wall/app/views/messages/index.html.erb:16: syntax error, unexpected tSTRING_DEND, expecting ')'
+       ...eated_at.day.ordinalize}, %Y")} );@output_buffer.safe_append...
+       ...                               ^
+       /vagrant/rails_mvc/the_wall/app/views/messages/index.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+       '.freeze; end 
+                    ^
+       /vagrant/rails_mvc/the_wall/app/views/messages/index.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+       /vagrant/rails_mvc/the_wall/app/views/messages/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/conditionalget.rb:25:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:58:in `get'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:39:in `block in process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:38:in `times'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:38:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:7:in `block (2 levels) in <top (required)>'
+
+Finished in 0.59023 seconds (files took 3.89 seconds to load)
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+rspec ./spec/features/create_message_spec.rb:21 # create a new message unsuccessfully because message is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+F.
+
+Failures:
+
+  1) create a new message successfully creates and posts a message
+     Failure/Error: <p><%= @message.user.username %> - <%= @message.created_at.strftime("%B #{message.created_at.day.ordinalize}, %Y") %></p>
+     
+     ActionView::Template::Error:
+       undefined method `user' for nil:NilClass
+     # ./app/views/messages/index.html.erb:16:in `block in _app_views_messages_index_html_erb___3504018287479296991_69204680'
+     # ./app/views/messages/index.html.erb:15:in `_app_views_messages_index_html_erb___3504018287479296991_69204680'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/etag.rb:24:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/conditionalget.rb:25:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/head.rb:13:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:38:in `call_app'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/rack/logger.rb:20:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/lock.rb:17:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/engine.rb:518:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/application.rb:165:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:66:in `block in call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `each'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-1.6.5/lib/rack/urlmap.rb:50:in `call'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:58:in `get'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:61:in `process'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:39:in `block in process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:38:in `times'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:38:in `process_and_follow_redirects'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/browser.rb:27:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/form.rb:79:in `submit'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/rack_test/node.rb:64:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `block in click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/element.rb:143:in `click'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:61:in `click_button'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/create_message_spec.rb:14:in `block (3 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # NoMethodError:
+     #   undefined method `user' for nil:NilClass
+     #   ./app/views/messages/index.html.erb:16:in `block in _app_views_messages_index_html_erb___3504018287479296991_69204680'
+
+Finished in 0.66718 seconds (files took 3.85 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/features/create_message_spec.rb:11 # create a new message successfully creates and posts a message
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/create_message_spec.rb
+..
+
+Finished in 0.63472 seconds (files took 3.82 seconds to load)
+2 examples, 0 failures
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/logout_user_spec.rb
+.
+
+Finished in 0.58208 seconds (files took 3.84 seconds to load)
+1 example, 0 failures
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ mkdir spec/supportvagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ touch spec/support/user_helper.rb
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/login_user_spec.rb
+FFF
+
+Failures:
+
+  1) guest user creates an account successfully logs in a user account
+     Failure/Error: fill_in "username", with: "listhebeast"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "username"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/login_user_spec.rb:10:in `block (3 levels) in <top (required)>'
+
+  2) guest user creates an account successfully creates a new user account
+     Failure/Error: fill_in "username", with: "raeraerae"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "username"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/login_user_spec.rb:18:in `block (3 levels) in <top (required)>'
+
+  3) guest user creates an account unsuccessfully because name is too short
+     Failure/Error: fill_in "username", with: "rae"
+     
+     Capybara::ElementNotFound:
+       Unable to find field "username"
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:44:in `block in find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/base.rb:85:in `synchronize'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/finders.rb:33:in `find'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/node/actions.rb:92:in `fill_in'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/session.rb:769:in `block (2 levels) in <class:Session>'
+     # /home/vagrant/.rvm/gems/ruby-2.3.1/gems/capybara-2.13.0/lib/capybara/dsl.rb:52:in `block (2 levels) in <module:DSL>'
+     # ./spec/features/login_user_spec.rb:29:in `block (3 levels) in <top (required)>'
+
+Finished in 0.56461 seconds (files took 3.99 seconds to load)
+3 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/features/login_user_spec.rb:8 # guest user creates an account successfully logs in a user account
+rspec ./spec/features/login_user_spec.rb:16 # guest user creates an account successfully creates a new user account
+rspec ./spec/features/login_user_spec.rb:27 # guest user creates an account unsuccessfully because name is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/login_user_spec.rb
+FFF
+
+Failures:
+
+  1) guest user creates an account successfully logs in a user account
+     Failure/Error: expect(page).to have_content "Welcome, listhebeast"
+       expected to find text "Welcome, listhebeast" in "Coding Dojo Wall Welcome, rae_rudie Log Out Post a Message"
+     # ./spec/features/login_user_spec.rb:13:in `block (3 levels) in <top (required)>'
+
+  2) guest user creates an account successfully creates a new user account
+     Failure/Error: expect(page).to have_content "Welcome, raeraerae"
+       expected to find text "Welcome, raeraerae" in "Coding Dojo Wall Welcome, rae_rudie Log Out Post a Message"
+     # ./spec/features/login_user_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+  3) guest user creates an account unsuccessfully because name is too short
+     Failure/Error: expect(page).to have_content "Username is too short"
+       expected to find text "Username is too short" in "Coding Dojo Wall Welcome, rae_rudie Log Out Post a Message"
+     # ./spec/features/login_user_spec.rb:31:in `block (3 levels) in <top (required)>'
+
+Finished in 0.79763 seconds (files took 4.01 seconds to load)
+3 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/features/login_user_spec.rb:8 # guest user creates an account successfully logs in a user account
+rspec ./spec/features/login_user_spec.rb:16 # guest user creates an account successfully creates a new user account
+rspec ./spec/features/login_user_spec.rb:27 # guest user creates an account unsuccessfully because name is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/login_user_spec.rb
+.FF
+
+Failures:
+
+  1) guest user creates an account successfully creates a new user account
+     Failure/Error: expect(page).to have_content "Welcome, raeraerae"
+       expected to find text "Welcome, raeraerae" in "Coding Dojo Wall Welcome, listhebeast Log Out Post a Message"
+     # ./spec/features/login_user_spec.rb:21:in `block (3 levels) in <top (required)>'
+
+  2) guest user creates an account unsuccessfully because name is too short
+     Failure/Error: expect(page).to have_content "Username is too short"
+       expected to find text "Username is too short" in "Coding Dojo Wall Welcome, listhebeast Log Out Post a Message"
+     # ./spec/features/login_user_spec.rb:31:in `block (3 levels) in <top (required)>'
+
+Finished in 0.61844 seconds (files took 3.97 seconds to load)
+3 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/features/login_user_spec.rb:16 # guest user creates an account successfully creates a new user account
+rspec ./spec/features/login_user_spec.rb:27 # guest user creates an account unsuccessfully because name is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/login_user_spec.rb
+..F
+
+Failures:
+
+  1) guest user creates an account unsuccessfully because name is too short
+     Failure/Error: expect(page).to have_content "Username is too short"
+       expected to find text "Username is too short" in "Coding Dojo Wall Welcome, listhebeast Log Out Post a Message"
+     # ./spec/features/login_user_spec.rb:31:in `block (3 levels) in <top (required)>'
+
+Finished in 0.6477 seconds (files took 4.5 seconds to load)
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/features/login_user_spec.rb:27 # guest user creates an account unsuccessfully because name is too short
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rspec spec/features/login_user_spec.rb
+...
+
+Finished in 0.6134 seconds (files took 3.99 seconds to load)
+3 examples, 0 failures
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ cd ..
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ rails new tdd_routes
+Expected string default value for '--rc'; got false (boolean)
+      create  
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching version metadata from https://rubygems.org/..
+Fetching dependency metadata from https://rubygems.org/.
+Resolving dependencies...
+Using rake 12.0.0
+Using i18n 0.8.1
+Using json 1.8.6
+Using minitest 5.10.1
+Using thread_safe 0.3.6
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 1.6.5
+Using mime-types-data 3.2016.0521
+Using arel 6.0.4
+Using debug_inspector 0.0.2
+Using bundler 1.14.6
+Using byebug 9.0.6
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using thor 0.19.4
+Using concurrent-ruby 1.0.5
+Using multi_json 1.12.1
+Using rdoc 4.3.0
+Using sass 3.4.23
+Installing tilt 2.0.7
+Using sqlite3 1.3.13
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.7.0.1
+Using rack-test 0.6.3
+Using mime-types 3.1
+Using binding_of_caller 0.7.2
+Using coffee-script 2.4.1
+Installing uglifier 3.1.9
+Using sprockets 3.7.1
+Using sdoc 0.4.2
+Using turbolinks 5.0.1
+Using activesupport 4.2.7
+Using loofah 2.0.3
+Using mail 2.6.4
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.3.7
+Using activemodel 4.2.7
+Using jbuilder 2.6.3
+Using spring 2.0.1
+Using rails-html-sanitizer 1.0.3
+Using rails-dom-testing 1.0.8
+Using activejob 4.2.7
+Using activerecord 4.2.7
+Using actionview 4.2.7
+Using actionpack 4.2.7
+Using actionmailer 4.2.7
+Using railties 4.2.7
+Using sprockets-rails 3.2.0
+Using coffee-rails 4.1.1
+Using jquery-rails 4.2.2
+Using rails 4.2.7
+Using sass-rails 5.0.6
+Using web-console 2.3.0
+Bundle complete! 12 Gemfile dependencies, 56 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ rails g controller Users index create new
+Expected string default value for '--rc'; got false (boolean)
+Usage:
+  rails new APP_PATH [options]
+
+Options:
+  -r, [--ruby=PATH]                                      # Path to the Ruby binary of your choice
+                                                         # Default: /home/vagrant/.rvm/rubies/ruby-2.3.1/bin/ruby
+  -m, [--template=TEMPLATE]                              # Path to some application template (can be a filesystem path or URL)
+      [--skip-gemfile], [--no-skip-gemfile]              # Don't create a Gemfile
+  -B, [--skip-bundle], [--no-skip-bundle]                # Don't run bundle install
+  -G, [--skip-git], [--no-skip-git]                      # Skip .gitignore file
+      [--skip-keeps], [--no-skip-keeps]                  # Skip source control .keep files
+  -O, [--skip-active-record], [--no-skip-active-record]  # Skip Active Record files
+  -S, [--skip-sprockets], [--no-skip-sprockets]          # Skip Sprockets files
+      [--skip-spring], [--no-skip-spring]                # Don't install Spring application preloader
+  -d, [--database=DATABASE]                              # Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite3/frontbase/ibm_db/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
+                                                         # Default: sqlite3
+  -j, [--javascript=JAVASCRIPT]                          # Preconfigure for selected JavaScript library
+                                                         # Default: jquery
+  -J, [--skip-javascript], [--no-skip-javascript]        # Skip JavaScript files
+      [--dev], [--no-dev]                                # Setup the application with Gemfile pointing to your Rails checkout
+      [--edge], [--no-edge]                              # Setup the application with Gemfile pointing to Rails repository
+      [--skip-turbolinks], [--no-skip-turbolinks]        # Skip turbolinks gem
+  -T, [--skip-test-unit], [--no-skip-test-unit]          # Skip Test::Unit files
+      [--rc=RC]                                          # Path to file containing extra configuration options for rails command
+      [--no-rc], [--no-no-rc]                            # Skip loading of extra configuration options from .railsrc file
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Rails options:
+  -h, [--help], [--no-help]        # Show this help message and quit
+  -v, [--version], [--no-version]  # Show Rails version number and quit
+
+Description:
+    The 'rails new' command creates a new Rails application with a default
+    directory structure and configuration at the path you specify.
+
+    You can specify extra command-line arguments to be used every time
+    'rails new' runs in the .railsrc configuration file in your home directory.
+
+    Note that the arguments specified in the .railsrc file don't affect the
+    defaults values shown above in this help message.
+
+Example:
+    rails new ~/Code/Ruby/weblog
+
+    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+    See the README in the newly created application to get going.
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ bundle install
+Could not locate Gemfile
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ ls
+bank                magic               RGR_demo         the_wall
+bank.zip            magic.zip           RGR_demo.zip     the_wall.zip
+blogs_proj          new_project.txt     scaffold_demo    time_display
+blogs_proj.zip      ninja_gold          stringer         time_display.zip
+demo                ninja_gold.zip      stringer.zip     tree_of_life
+dojo_dashboard      optimize            survey_form      tree_of_life.zip
+dojo_dashboard.zip  products_demo       survey_form.zip  user_login_proj
+dojo_ninjas         rae_stringer        tdd              users_demo
+dojo_ninjas.zip     Rails Commands.txt  tdd_notes.rb     users_demo.zip
+hello               rails_TDD           tdd_routes
+hello.zip           rails_TDD.zip       tdd.zip
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ cd tdd_routes/
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ bundle install
+Resolving dependencies...
+Using rake 12.0.0
+Using i18n 0.8.1
+Using json 1.8.6
+Using minitest 5.10.1
+Using thread_safe 0.3.6
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 1.6.5
+Using mime-types-data 3.2016.0521
+Using arel 6.0.4
+Using public_suffix 2.0.5
+Using bcrypt 3.1.11
+Using debug_inspector 0.0.2
+Using bundler 1.14.6
+Using byebug 9.0.6
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using thor 0.19.4
+Using concurrent-ruby 1.0.5
+Using diff-lcs 1.3
+Using hirb 0.7.3
+Using multi_json 1.12.1
+Using rdoc 4.3.0
+Using rspec-support 3.5.0
+Using sass 3.4.23
+Using tilt 2.0.7
+Using sqlite3 1.3.13
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.7.0.1
+Using rack-test 0.6.3
+Using mime-types 3.1
+Using addressable 2.5.0
+Using binding_of_caller 0.7.2
+Using coffee-script 2.4.1
+Using uglifier 3.1.9
+Using sprockets 3.7.1
+Using sdoc 0.4.2
+Using rspec-core 3.5.4
+Using rspec-expectations 3.5.0
+Using rspec-mocks 3.5.0
+Using turbolinks 5.0.1
+Using activesupport 4.2.7
+Using loofah 2.0.3
+Using xpath 2.0.0
+Using mail 2.6.4
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.3.7
+Using activemodel 4.2.7
+Using factory_girl 4.8.0
+Using jbuilder 2.6.3
+Using spring 2.0.1
+Using rails-html-sanitizer 1.0.3
+Using capybara 2.13.0
+Using rails-dom-testing 1.0.8
+Using activejob 4.2.7
+Using activerecord 4.2.7
+Using actionview 4.2.7
+Using actionpack 4.2.7
+Using actionmailer 4.2.7
+Using railties 4.2.7
+Using sprockets-rails 3.2.0
+Using coffee-rails 4.1.1
+Using factory_girl_rails 4.8.0
+Using jquery-rails 4.2.2
+Using rspec-rails 3.5.2
+Using rails 4.2.7
+Using sass-rails 5.0.6
+Using web-console 2.3.0
+Using rails-footnotes 4.1.8
+Bundle complete! 18 Gemfile dependencies, 71 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ bundle show hirb/home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ rails generate rspec:install
+Running via Spring preloader in process 9007
+      create  .rspec
+      create  spec
+      create  spec/spec_helper.rb
+      create  spec/rails_helper.rb
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ rails g controller Users index create new
+Running via Spring preloader in process 9018
+Expected string default value for '--helper'; got true (boolean)
+Expected string default value for '--assets'; got true (boolean)
+      create  app/controllers/users_controller.rb
+       route  get 'users/new'
+       route  get 'users/create'
+       route  get 'users/index'
+      invoke  erb
+      create    app/views/users
+      create    app/views/users/index.html.erb
+      create    app/views/users/create.html.erb
+      create    app/views/users/new.html.erb
+      invoke  rspec
+      create    spec/controllers/users_controller_spec.rb
+      create    spec/views/users
+      create    spec/views/users/index.html.erb_spec.rb
+      create    spec/views/users/create.html.erb_spec.rb
+      create    spec/views/users/new.html.erb_spec.rb
+      invoke  helper
+      create    app/helpers/users_helper.rb
+      invoke    rspec
+      create      spec/helpers/users_helper_spec.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/users.coffee
+      invoke    scss
+      create      app/assets/stylesheets/users.scss
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ rspec spec/controllers/users_controller_spec.rb
+Running via Spring preloader in process 9036
+/vagrant/rails_mvc/tdd_routes/db/schema.rb doesn't exist yet. Run `rake db:migrate` to create it, then try again. If you do not intend to use a database, you should instead alter /vagrant/rails_mvc/tdd_routes/config/application.rb to limit the frameworks that will be loaded.
+.
+
+Finished in 0.01622 seconds (files took 7.48 seconds to load)
+1 example, 0 failures
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ rspec spec/controllers/users_controller_spec.rb
+Running via Spring preloader in process 9046
+/vagrant/rails_mvc/tdd_routes/db/schema.rb doesn't exist yet. Run `rake db:migrate` to create it, then try again. If you do not intend to use a database, you should instead alter /vagrant/rails_mvc/tdd_routes/config/application.rb to limit the frameworks that will be loaded.
+.F
+
+Failures:
+
+  1) UsersController routes /users/:id to users profile
+     Failure/Error: expect(:get => "/users/1").to route_to(:controller => "users", :action => "show", :id => "1")
+       No route matches "/users/1"
+     # ./spec/controllers/users_controller_spec.rb:9:in `block (2 levels) in <top (required)>'
+
+Finished in 0.14375 seconds (files took 6.22 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/controllers/users_controller_spec.rb:8 # UsersController routes /users/:id to users profile
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ rake routes
+      Prefix Verb URI Pattern             Controller#Action
+ users_index GET  /users/index(.:format)  users#index
+users_create GET  /users/create(.:format) users#create
+   users_new GET  /users/new(.:format)    users#new
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ rake routes
+      Prefix Verb URI Pattern             Controller#Action
+ users_index GET  /users/index(.:format)  users#index
+users_create POST /users/create(.:format) users#create
+   users_new GET  /users/new(.:format)    users#new
+             GET  /users/:id(.:format)    users#show
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ rspec spec/controllers/users_controller_spec.rb
+Running via Spring preloader in process 9062
+/vagrant/rails_mvc/tdd_routes/db/schema.rb doesn't exist yet. Run `rake db:migrate` to create it, then try again. If you do not intend to use a database, you should instead alter /vagrant/rails_mvc/tdd_routes/config/application.rb to limit the frameworks that will be loaded.
+..
+
+Finished in 0.02162 seconds (files took 5.67 seconds to load)
+2 examples, 0 failures
+
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/tdd_routes$ cd ..
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ cd the_wall/
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ rails s -b 0.0.0.0=> Booting WEBrick
+=> Rails 4.2.7 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+[2017-03-19 19:34:05] INFO  WEBrick 1.3.1
+[2017-03-19 19:34:05] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux]
+[2017-03-19 19:34:05] INFO  WEBrick::HTTPServer#start: pid=9237 port=3000
+
+
+Started GET "/" for 10.0.2.2 at 2017-03-19 19:34:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  ActiveRecord::SchemaMigration Load (1.3ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 77ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2017-03-19 19:34:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (34.8ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vagrant/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.7ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2017-03-19 19:34:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1455ms (Views: 1453.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2017-03-19 19:34:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 208ms (Views: 207.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-03-19 19:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/messages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.0.2.2 at 2017-03-19 19:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 10.0.2.2 at 2017-03-19 19:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 10.0.2.2 at 2017-03-19 19:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 10.0.2.2 at 2017-03-19 19:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 10.0.2.2 at 2017-03-19 19:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-03-19 19:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.0.2.2 at 2017-03-19 19:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 10.0.2.2 at 2017-03-19 19:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/users/create" for 10.0.2.2 at 2017-03-19 19:34:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Qenwv+TiA7oM7So5hmxIbnX0LZmgOLJqVJEX2NKssUTZon4rHf6Uahfgq3dW/t1o9f+XRZTwZcDvIG1/QAWMqg==", "user"=>{"username"=>"rae_rudie"}}
+  User Load (1.4ms)  SELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+   (0.1ms)  begin transaction
+  User Exists (1.4ms)  SELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('rae_rudie') LIMIT 1
+  SQL (1.7ms)  INSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)  [["username", "rae_rudie"], ["created_at", "2017-03-19 19:34:25.725671"], ["updated_at", "2017-03-19 19:34:25.725671"]]
+   (5.7ms)  commit transaction
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 129ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/messages" for 10.0.2.2 at 2017-03-19 19:34:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  User Load (2.2ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Message Load (1.3ms)  SELECT "messages".* FROM "messages"
+  User Load (1.3ms)  SELECT "users".* FROM "users" WHERE "users"."id" IN (1)
+  Rendered messages/index.html.erb within layouts/application (59.3ms)
+Completed 200 OK in 298ms (Views: 238.6ms | ActiveRecord: 7.2ms)
+
+
+Started POST "/messages/create" for 10.0.2.2 at 2017-03-19 19:34:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"oQbpZzfj4Ffb4uEMlqiID86RQ0WqUejM5JgJrJpCpfs5TWfzzv93h8DvYEJGOh0JTpr5mZ6ZP2ZfKXMLCOuYFQ==", "message"=>{"content"=>"this is another great message!!"}}
+  User Load (2.7ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+   (0.2ms)  begin transaction
+  SQL (5.4ms)  INSERT INTO "messages" ("content", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["content", "this is another great message!!"], ["user_id", 4], ["created_at", "2017-03-19 19:34:34.984822"], ["updated_at", "2017-03-19 19:34:34.984822"]]
+   (4.6ms)  commit transaction
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 70ms (ActiveRecord: 12.8ms)
+
+
+Started GET "/messages" for 10.0.2.2 at 2017-03-19 19:34:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  User Load (1.0ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Message Load (3.0ms)  SELECT "messages".* FROM "messages"
+  User Load (1.4ms)  SELECT "users".* FROM "users" WHERE "users"."id" IN (1, 4)
+  Rendered messages/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 203ms (Views: 196.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/users/logout" for 10.0.2.2 at 2017-03-19 19:34:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#logout as HTML
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2017-03-19 19:34:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 217ms (Views: 216.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for 10.0.2.2 at 2017-03-19 19:34:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"gmK3P4Gyx1dWw6YmoEb5QChvjVGviLhiTOBZePFR3GdJ79iy9RWBjnGHLNZWZzZIdwVIbvtP8DNQgA8yGUxt9w==", "user"=>{"username"=>"listhebeast"}}
+  User Load (1.7ms)  SELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+   (0.1ms)  begin transaction
+  User Exists (2.5ms)  SELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('listhebeast') LIMIT 1
+   (0.1ms)  rollback transaction
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 20ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2017-03-19 19:34:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 165ms (Views: 164.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/create" for 10.0.2.2 at 2017-03-19 19:34:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Xg8wHS3nstHov+/2/by1rGAI5mXf0H9Jbvb+3Ab707KVgl+QWUD0CM/7ZQYLnXqkP2IjWosXNxhylqiW7uZiIg==", "user"=>{"username"=>"lisalisa"}}
+  User Load (1.3ms)  SELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+   (0.2ms)  begin transaction
+  User Exists (1.3ms)  SELECT  1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('lisalisa') LIMIT 1
+  SQL (3.2ms)  INSERT INTO "users" ("username", "created_at", "updated_at") VALUES (?, ?, ?)  [["username", "lisalisa"], ["created_at", "2017-03-19 19:34:51.245436"], ["updated_at", "2017-03-19 19:34:51.245436"]]
+   (7.3ms)  commit transaction
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 25ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/messages" for 10.0.2.2 at 2017-03-19 19:34:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MessagesController#index as HTML
+  User Load (1.0ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Message Load (0.9ms)  SELECT "messages".* FROM "messages"
+  User Load (1.0ms)  SELECT "users".* FROM "users" WHERE "users"."id" IN (1, 4)
+  Rendered messages/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 189ms (Views: 185.2ms | ActiveRecord: 2.8ms)
+^C[2017-03-19 19:34:59] INFO  going to shutdown ...
+[2017-03-19 19:35:00] INFO  WEBrick::HTTPServer#start done.
+Exiting
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/the_wall$ cd ..
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ cd ..
+vagrant@vagrant-ubuntu-trusty-64:/vagrant$ ls
+basic_13.rb  bootstrap.sh  is_this_file_synced  rails_mvc  Vagrantfile
+vagrant@vagrant-ubuntu-trusty-64:/vagrant$ sudo su postgres -c psql
+psql (9.3.16)
+Type "help" for help.
+
+postgres=# CREATE ROLE vagrant SUPERUSER LOGIN;
+CREATE ROLE
+postgres=# \q
+vagrant@vagrant-ubuntu-trusty-64:/vagrant$ cd rails_mvc/
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ rails new DojoSecrets --database=postgresql --skip-test-unit
+Expected string default value for '--rc'; got false (boolean)
+      create  
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching version metadata from https://rubygems.org/..
+Fetching dependency metadata from https://rubygems.org/.
+Resolving dependencies...
+Using rake 12.0.0
+Using i18n 0.8.1
+Using json 1.8.6
+Using minitest 5.10.1
+Using thread_safe 0.3.6
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 1.6.5
+Using mime-types-data 3.2016.0521
+Using arel 6.0.4
+Using debug_inspector 0.0.2
+Using bundler 1.14.6
+Using byebug 9.0.6
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using thor 0.19.4
+Using concurrent-ruby 1.0.5
+Using multi_json 1.12.1
+Installing pg 0.20.0 with native extensions
+Using rdoc 4.3.0
+Using sass 3.4.23
+Using tilt 2.0.7
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.7.0.1
+Using rack-test 0.6.3
+Using mime-types 3.1
+Using binding_of_caller 0.7.2
+Using coffee-script 2.4.1
+Using uglifier 3.1.9
+Using sprockets 3.7.1
+Using sdoc 0.4.2
+Using turbolinks 5.0.1
+Using activesupport 4.2.7
+Using loofah 2.0.3
+Using mail 2.6.4
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.3.7
+Using activemodel 4.2.7
+Using jbuilder 2.6.3
+Using spring 2.0.1
+Using rails-html-sanitizer 1.0.3
+Using rails-dom-testing 1.0.8
+Using activejob 4.2.7
+Using activerecord 4.2.7
+Using actionview 4.2.7
+Using actionpack 4.2.7
+Using actionmailer 4.2.7
+Using railties 4.2.7
+Using sprockets-rails 3.2.0
+Using coffee-rails 4.1.1
+Using jquery-rails 4.2.2
+Using rails 4.2.7
+Using sass-rails 5.0.6
+Using web-console 2.3.0
+Bundle complete! 12 Gemfile dependencies, 56 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ bundle install
+Could not locate Gemfile
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc$ cd DojoSecrets/
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/DojoSecrets$ bundle install
+Resolving dependencies...
+Using rake 12.0.0
+Using i18n 0.8.1
+Using json 1.8.6
+Using minitest 5.10.1
+Using thread_safe 0.3.6
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using rack 1.6.5
+Using mime-types-data 3.2016.0521
+Using arel 6.0.4
+Using public_suffix 2.0.5
+Using bcrypt 3.1.11
+Using debug_inspector 0.0.2
+Using bundler 1.14.6
+Using byebug 9.0.6
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using thor 0.19.4
+Using concurrent-ruby 1.0.5
+Using diff-lcs 1.3
+Using hirb 0.7.3
+Using multi_json 1.12.1
+Using pg 0.20.0
+Using rdoc 4.3.0
+Using rspec-support 3.5.0
+Using sass 3.4.23
+Using tilt 2.0.7
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.7.0.1
+Using rack-test 0.6.3
+Using mime-types 3.1
+Using addressable 2.5.0
+Using binding_of_caller 0.7.2
+Using coffee-script 2.4.1
+Using uglifier 3.1.9
+Using sprockets 3.7.1
+Using sdoc 0.4.2
+Using rspec-core 3.5.4
+Using rspec-expectations 3.5.0
+Using rspec-mocks 3.5.0
+Using turbolinks 5.0.1
+Using activesupport 4.2.7
+Using loofah 2.0.3
+Using xpath 2.0.0
+Using mail 2.6.4
+Using rails-deprecated_sanitizer 1.0.3
+Using globalid 0.3.7
+Using activemodel 4.2.7
+Using factory_girl 4.8.0
+Using jbuilder 2.6.3
+Using spring 2.0.1
+Using rails-html-sanitizer 1.0.3
+Using capybara 2.13.0
+Using rails-dom-testing 1.0.8
+Using activejob 4.2.7
+Using activerecord 4.2.7
+Using actionview 4.2.7
+Using actionpack 4.2.7
+Using actionmailer 4.2.7
+Using railties 4.2.7
+Using sprockets-rails 3.2.0
+Using coffee-rails 4.1.1
+Using factory_girl_rails 4.8.0
+Using jquery-rails 4.2.2
+Using rspec-rails 3.5.2
+Using rails 4.2.7
+Using sass-rails 5.0.6
+Using web-console 2.3.0
+Using rails-footnotes 4.1.8
+Bundle complete! 18 Gemfile dependencies, 71 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/DojoSecrets$ rake db:create
+vagrant@vagrant-ubuntu-trusty-64:/vagrant/rails_mvc/DojoSecrets$ rails db
+psql (9.3.16)
+Type "help" for help.
+
+DojoSecrets_development=# Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
+NAFMacBook-3:first_vagrant_box amandagaines$ rails db
+Rails is not currently installed on this system. To get the latest version, simply type:
+
+    $ sudo gem install rails
+
+You can then rerun your "rails" command.
+NAFMacBook-3:first_vagrant_box amandagaines$ gem 'hirb'
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command hirb
+NAFMacBook-3:first_vagrant_box amandagaines$   gem 'rails-footnotes'
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command rails-footnotes
+NAFMacBook-3:first_vagrant_box amandagaines$   gem 'rspec-rails'
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command rspec-rails
+NAFMacBook-3:first_vagrant_box amandagaines$   gem 'factory_girl_rails'
+ERROR:  While executing gem ... (Gem::CommandLineError)
+    Unknown command factory_girl_rails
+NAFMacBook-3:first_vagrant_box amandagaines$ 

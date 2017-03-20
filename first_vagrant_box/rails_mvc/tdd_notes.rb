@@ -162,3 +162,9 @@ end
   # Checking for permissions, if necessary
   # Handling any errors, if they affect the response
   # Directly testing a critical component of your app, that involves a Controller
+
+#### Bcrypt
+# Built in validations:
+  # password required only on create not on update
+  # password length should be less than or equal to 72 characters
+  # Confirmation of password (using a password_confirmation attribute)

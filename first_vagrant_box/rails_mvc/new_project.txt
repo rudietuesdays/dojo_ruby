@@ -15,6 +15,7 @@ Add to dev env
 IN Terminal
   bundle install
   rails generate rspec:install
+  rails generate rails_footnotes:install
 
 IN spec/rails_helper.rb
   require 'factory_girl_rails'
@@ -94,3 +95,19 @@ run all RSpec tests
 run tests in a specific file
   rspec spec/<FOLDER>/<FILENAME>
   i.e. rspec spec/models/user_spec.rb
+
+#### to start up project with PostgreS
+IN Terminal
+  rails new <proj_name> --database=postgresql --skip-test-unit
+
+EDIT Gemfile
+
+IN Terminal
+  bundle install
+  rake db:create # only once per project!
+  rails db # to open and play with database
+  \q # to quit
+
+# to create controller w/o specs or views
+IN Terminal
+  rails g controller Sessions new --no-controller-specs --no-view-specs
