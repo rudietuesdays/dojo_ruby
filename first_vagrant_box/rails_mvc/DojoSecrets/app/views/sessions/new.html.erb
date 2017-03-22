@@ -1,4 +1,5 @@
 <h1>Login</h1>
+<h3>Don't have an account? <a href="/users/new">Register here</a></h3>
 <form action="/sessions/create" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <p>Email: <input type="text" name="email"></p>

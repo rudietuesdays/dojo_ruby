@@ -1,6 +1,10 @@
 class SessionsController < ApplicationController
+  skip_before_action :require_login, only: [:new, :create]
+
   def new
     # render login page
+    puts '*'*20
+    puts session[:user_id]
   end
 
   def create

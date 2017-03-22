@@ -1,21 +1,34 @@
 Rails.application.routes.draw do
   # routes as resources will also work...
-  # resources :sessions, only: [:new, :create, :destroy]
-  # resources :users, only: [:show]
   #
-  get 'users/new'
+  # get 'likes/create'
+  # get 'likes/destroy'
+  # get 'secrets/index'
+  # resources :sessions, only: [:new, :create, :destroy]
+  # resources :users
+  # resources :secrets, only: [:index, :create, :destroy]
+  # resources :likes, only: [:create, :destroy]
 
-  get 'users/show'
+  root to: 'sessions#new'
 
-  get 'users/edit'
+  get '/sessions/new'
+  post '/sessions/create'
 
-  get 'sessions/new'
+  get '/users/new'
+  post '/users/create'
+  get '/users/:id' => 'users#show'
+  get '/users/:id/edit' => 'users#edit'
+  patch '/users/:id' => 'users#update'
 
-  post 'sessions/create'
+  get '/secrets' => 'secrets#index'
+  post '/secrets/create'
+  delete '/secrets/:id/delete' => 'secrets#destroy'
 
-  get 'users/:id' => 'users#show'
+  post '/likes/:id' => 'likes#create'
+  delete '/likes/:id' => 'likes#destroy'
 
   delete '/logout/:id' => 'sessions#destroy'
+  delete '/delete/:id' => 'users#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

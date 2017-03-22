@@ -1,2 +1,17 @@
 <h1>Shhh... it's a Dojo Secret</h1>
-<h3>Welcome, <%= @user.name %></h3>
+<h2>Welcome, <%= @user.name %></h2>
+<h3>New Secret</h3>
+<form action="/secrets/create" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <textarea name="content" rows="8" cols="80"></textarea>
+  <input type="submit" value="Confess">
+</form>
+<h3>Secrets</h3>
+<% @secrets.each do |secret| %>
+  <% if secret.user == current_user %>
+    <p>
+      <%= secret.content %>
+      <a href="/secrets/<%= secret.id %>/delete" data-method="delete">Delete</a>
+    </p>
+  <% end %>
+<% end %>

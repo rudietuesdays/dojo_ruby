@@ -37,6 +37,8 @@ rails g controller <ControllerName> <methods space separated>
 
 **DELETE INPUT**
 <a href="/blogs/<%= blog.id %>" data-method="delete">Delete this blog!</a>
+OR
+<input type="hidden" name="_method" value="delete">
 
 **SIMPLIFY CONSOLE LOGS**
     GO TO config/environments/development.rb
