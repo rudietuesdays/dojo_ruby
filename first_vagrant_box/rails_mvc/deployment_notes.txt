@@ -1,0 +1,6 @@
+*** RoR DEPLOYMENT ***
+# phusion is easier than puma, but both are options
+# phusion has 2 versions: passenger & enterprise
+# postgresql saves db separately from project folder so it won't deploy along with project, unlike sqlite which will
+# sudo install stuff in ubuntu! esp if it has a library
+scp -r secrets -i ~/pms/pem.key

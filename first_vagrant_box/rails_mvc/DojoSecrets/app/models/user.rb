@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
 
   validates :name, :email, presence: true
   validates :email, uniqueness: { case_sensitive: false }, format: { with: EMAIL_REGEX }
+  validates :password, length: { minimum: 8 }
 
   before_save :downcase_fields
 

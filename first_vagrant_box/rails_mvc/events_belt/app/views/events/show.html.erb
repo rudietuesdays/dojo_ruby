@@ -1,0 +1,32 @@
+<h1><%= @event.name %></h1>
+<h3>Host: <%= @event.user.first_name %></h3>
+<h3>Date: <%= @event.date.strftime("%B %e, %Y") %></h3>
+<h3>Location: <%= @event.city %>, <%= @event.state %></h3>
+<h3>Number joining <%= @event.user.first_name %> at this event: <%= @event.attendances.count %></h3>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Location</th>
+  </thead>
+  <tbody>
+    <% @event.attendances.each do |a| %>
+    <tr>
+      <td><%= a.user.first_name %></td>
+      <td><%= a.user.city %>, <%= a.user.state %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<h3>Discussion about this event:</h3>
+<div style="height:150px;width:400px;overflow:auto;padding:10px;border:2px solid black">
+  <% @comments.order('created_at DESC').each do |comment| %>
+  <p><%= comment.user.first_name %> says: <%= comment.content %></p>
+  <p>============================================</p>
+  <% end %>
+</div>
+<p>Add comment:</p>
+<form action="/comments/<%= @event.id %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <textarea name="content" rows="8" cols="80"></textarea>
+  <input type="submit" value="Add Comment">
+</form>

@@ -1,8 +1,9 @@
 IN Terminal
 Navigate to directory where you want to build FOLDER
 
-To install without test unit and use Factory Girl and Capybara instead
-  rails new <proj_name> -T
+#### to start up project  without test unit AND PostgreS
+  IN Terminal
+    rails new <proj_name> --database=postgresql --skip-test-unit
 
 Navigate to GEMFILE
 Add to dev env
@@ -11,6 +12,7 @@ Add to dev env
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'
+  *enable bcrypt if you'll be using it
 
 IN Terminal
   bundle install
@@ -95,10 +97,6 @@ run all RSpec tests
 run tests in a specific file
   rspec spec/<FOLDER>/<FILENAME>
   i.e. rspec spec/models/user_spec.rb
-
-#### to start up project with PostgreS
-IN Terminal
-  rails new <proj_name> --database=postgresql --skip-test-unit
 
 EDIT Gemfile
 
