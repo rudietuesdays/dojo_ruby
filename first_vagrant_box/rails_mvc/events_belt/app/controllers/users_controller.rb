@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   skip_before_action :require_login, only: [:new, :create]
-  
+  before_action :this_user, except: [:new, :create]
+
   def create
     @user = User.new(user_params)
     if @user.save
@@ -30,5 +31,8 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit(:first_name, :last_name, :email, :city, :state, :password, :password_confirmation)
+  end
+  def this_user
+    redirect_to "/users/#{current_user.id}" unless params[:id].to_i == session[:user_id]
   end
 end

@@ -1,6 +1,10 @@
 IN Terminal
 Navigate to directory where you want to build FOLDER
 
+#### to start up project without test unit (for testing w Factory Girl, Capybara)
+IN Terminal
+  rails new <proj_name> -T
+
 #### to start up project  without test unit AND PostgreS
   IN Terminal
     rails new <proj_name> --database=postgresql --skip-test-unit
@@ -100,12 +104,12 @@ run tests in a specific file
 
 EDIT Gemfile
 
-IN Terminal
+IN Terminal in PostgreS
   bundle install
   rake db:create # only once per project!
   rails db # to open and play with database
   \q # to quit
 
-# to create controller w/o specs or views
+# to create controller w/o specs for views or controllers
 IN Terminal
   rails g controller Sessions new --no-controller-specs --no-view-specs

@@ -6,15 +6,15 @@ class User < ApplicationRecord
   has_many :comments
 
   before_save :downcase_fields
-  # before_create :password, :password_confirmation, presence: true
+  before_create do
+    validates :password, :password_confirmation, length: { minimum: 8 }
+  end
 
   EMAIL_REGEX = /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]+)\z/i
 
   validates :first_name, :last_name, :email, :city, :state, presence: true
 
   validates :email, uniqueness: { case_sensitive: false }, format: { with: EMAIL_REGEX }
-
-  validates :password, length: { minimum: 8 }
 
   def downcase_fields
     self.email.downcase!
