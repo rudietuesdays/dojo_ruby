@@ -1,0 +1,181 @@
+// mixins : like a function to hold attributes
+
+// mixins don't need to be invoked inside a selector
+@mixin font_basics{
+  color: #3333FF;
+  font-size: 1em;
+}
+@include font_basics;
+
+@mixin default {
+  margin: 10px;
+  color: #888888;
+  font-size: .9 em;
+}
+#left-panel {
+  @include default;
+}
+#footer {
+  @include default;
+}
+
+@mixin table_style($table_width){
+  width: $table_width;
+  padding: 3px;
+  border: 1px solid gray;
+}
+#users_table{
+  @include table_style(500px);
+}
+
+@mixin gradient($colors...){
+  background: linear-gradient($colors);
+}
+#wrapper {
+  @include gradient(#888888, #B8B8B8, #E8E8E8);
+}
+#notification_box{
+  @include gradient(#33AD33, #80CC80, #CCEBCC)
+}
+
+// you can nest mixins!
+@mixin font_basics{
+  color: #3333FF;
+  font-size: 1em;
+}
+@mixin header{
+  @include font_basics;
+  text-decoration: underline;
+}
+
+// inheritance: similar to mixin but extending another selector to inherit its contents
+.message {
+  border-width: medium;
+  padding: 10px;
+}
+
+.success {
+  @extend .message;
+  color: green;
+  border-color: green;
+}
+.error {
+  @extend .message;
+  color: red;
+  border-color: red;
+}
+
+// import : to import a stylesheet from elsewhere
+// gets compiled down to one sheet in the browser
+@import 'fave_layout.scss';
+// or
+@import 'fave_layout';
+// or
+@import 'http://web.fave_layout.com';
+// or
+@import url('http://web.fave_layout.com')
+
+// basic color functions
+hue($color)
+saturation($color)
+lightness($color)
+adjust-hue($color, $degrees)
+lighten($color, $amount)
+darken($color, $amount)
+saturate($color, $amount)
+desaturate($color, $amount)
+
+// other color functions
+mix($color1, $color2, [$weight]) // mixes two colors together.
+complement($color) // returns a complement of a color
+invert($color) // returns the inverse of a color
+opacity($color) // gets the opacity of a color
+opacify($color, $amount) // makes a color more opaque
+transparentize($color, $amount) // makes a color more transparent
+
+// color example:
+$base_color: #000099;
+p{
+  color: darken($base_color, 20%);
+}
+a{
+  color: lighten($base_color, 20%);
+}
+table{
+  border: 1px solid saturate($base_color, 15%);
+}
+
+// can use if statements in SASS!
+// Boolean operations like && || != can also be used if you have multiple conditions to compare values
+@mixin button_preferences($background_color){
+  @if $background_color == blue{
+    color: white;
+  } @else if $background_color == white{
+    color: blue;
+  } @else{
+    color: black;
+  }
+}
+
+// can use 'for' in two forms: 'through' and 'to'
+// through goes from start to end
+@for $counter from 1 through 5{
+  .graph_point: 10px * $counter;
+}
+
+// to does NOT include the value of the end #
+@for $counter from 1 to 5{ // the last time this will run is at 4
+  .graph_point: 10px * $counter;
+}
+
+
+// each will iterate through each item in a loop
+@each $ninja in rae, priscilla, jason {
+  .thumbnails{
+    background-image: url('images/#{$ninja}.png');
+  }
+}
+
+@each $ninja, $belt in (rae, green), (priscilla, red), (jason, black){
+  .thumbnails{
+    background-image: url('images/#{$ninja}.png');
+    border: 1px solid $belt;
+  }
+}
+
+// maps can be used as follows:
+@each $button, $color in (show: blue, edit: gray, delete: red){
+  .#{$button}{
+    background-color: $color;
+  }
+}
+
+// while outputs until false
+$counter: 1;
+@while $counter <= 5{
+  .bar_#{counter}{
+    height: 20px * $counter;
+  }
+  $counter: $counter + 1;
+}
+
+// use '&' before a child selector or after a parent selector to include more attributes
+// &:hover == button:hover
+button {
+  color: #FFFFFF;
+  @include gradient(#33AD33, #80CC80, #CCEBCC);
+  border-top: 1px solid #96D1F8;
+  &:hover{
+    color: #CCCCCC;
+    background: #28597A;
+    border-top-color: #28597A;
+  }
+}
+
+//  #main_contents & == #main_contents .header
+.header{
+  color: #3333FF;
+  #main-contents &{
+    text-decoration: underline;
+  }
+}
